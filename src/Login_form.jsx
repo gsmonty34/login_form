@@ -8,7 +8,7 @@ import * as yup from 'yup'
 
 const validation = yup.object({
     name: yup.string().max(20, 'Must be 20 character or less').required("Name is required"),
-    email: yup.string().email("Email is required"),
+     email: yup.string().required("Email is required").email("Invalid"),
     password: yup.string().required("Password is required")
 
 })
